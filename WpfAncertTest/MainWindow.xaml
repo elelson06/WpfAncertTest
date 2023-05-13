@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfAncertTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAncertTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label FontSize="48" Content="{Binding TiempoActual}"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10">
+            <Button x:Name="btnStart"  Width="50" Height="50" Click="StartButton_Click">
+                <Image Source="/start_icon.png" Stretch="Uniform"/>
+            </Button>
+            <Button x:Name="btnPause" Width="50" Height="50" Click="PauseButton_Click">
+                <Image Source="/pause_icon.png" Stretch="Uniform"/>
+            </Button>
+            <Button x:Name="btnStop" Width="50" Height="50" Click="StopButton_Click">
+                <Image Source="/stop_icon.png" Stretch="Uniform"/>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <StartupObject>WpfAncertTest.MainWindow</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="pause_icon.png" />
+    <None Remove="start_icon.png" />
+    <None Remove="stop_icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="pause_icon.png" />
+    <Resource Include="start_icon.png" />
+    <Resource Include="stop_icon.png" />
+  </ItemGroup>
+
+</Project>
